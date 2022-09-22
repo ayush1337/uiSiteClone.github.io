@@ -1,5 +1,4 @@
 @import "typography";
-@import url('http://fonts.cdnfonts.com/css/helvetica-neue-9');
 *,
 *::after,
 *::before {
@@ -60,7 +59,7 @@ a {
     text-decoration: none;
 }
 header {
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: $font-primary;
     color: #fff;
     font-size: 1rem;
     width: 100%;
@@ -111,7 +110,7 @@ header img {
     // border-bottom: #fff 2px solid;
     &__link {
         color: #fff;
-        font-family: 'Helvetica Neue', sans-serif;
+        font-family: $font-primary;
         font-size: 2.5rem;
         padding: 2rem;
         display: flex;
