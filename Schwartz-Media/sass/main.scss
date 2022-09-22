@@ -1,0 +1,320 @@
+@import "typography";
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    width: 100%;
+}
+body {
+    font-family: $font-primary;  
+}
+.header {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    width: 100%;
+    display: flex;
+    &>* {
+        padding: 1.5rem;
+        cursor: pointer;
+    }
+}
+.logo {
+    svg {
+        width: 15rem;
+    }
+}
+.bx-menu {
+    color: #000;
+    font-size: 4rem;
+}
+
+.container {
+    margin: 7rem auto 0 auto;
+    display: grid;
+    grid-template-columns: minmax(8rem,1fr) repeat(12,minmax(2.4rem,1fr)) minmax(8rem,1fr); 
+    @media screen and (max-width:800px){
+        grid-template-columns: minmax(4rem,1fr) repeat(12,minmax(2.4rem,1fr)) minmax(4rem,1fr);       
+    }   
+}
+.introduction {
+    grid-column: 2/-2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    img {
+        max-width: 60rem;
+        @media screen and (max-width:800px){
+            grid-template-columns: 1fr;
+            max-width: 30rem;        
+        }
+    }
+    h1 {
+        font-size: 3.4rem;
+    }
+    &__start {
+        max-width: 100rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding-bottom: 10rem;
+        padding-top: 8rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.20) ;
+
+    }
+    &__text {
+        font-size: 3.4rem;        
+        word-spacing: 0.2rem;
+        @media screen and (max-width:800px){
+            font-size: 3rem;
+        }
+    }
+    &__link {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+        font-size: 2rem;
+        font-weight: 600;
+        cursor: pointer;
+        
+    }
+    &__link-text {
+        transition-property: all;
+        transition-duration: 0.2s;
+        transition-timing-function: ease;
+        transition-delay: 0s;
+    }
+    &__link-text:hover {
+        transform: translateX(0.5rem);
+    }    
+}
+.card {
+    grid-column: 2/-2;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    &__content {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.20) ;
+        max-width: 100rem;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        @media screen and (max-width:800px){
+            grid-template-columns: 1fr;               
+        }  
+        &>*{
+            padding: 2rem 0;
+        }
+        
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            
+        }
+
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3.5rem;
+    }
+    &__title {
+        text-transform: capitalize;
+        font-size: 2.4rem;
+        font-weight: 600;
+    }
+    &__text {
+        font-size: 3.4rem;
+        @media screen and (max-width:800px){
+            font-size: 2rem;
+        }
+    }    
+}
+.odd {    
+    @media screen and (max-width:800px){
+        img{
+        grid-row: 1/2;
+        }
+
+    }  
+}
+.c-gap {
+    column-gap: 2rem;
+}
+.btn {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5rem;
+    border-radius: 2.5rem;
+    padding: 1rem 3rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    &:hover {
+        background-color: #000;
+        color: #fff;
+    }
+}
+.flex-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    &-start {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+.two__card {
+    grid-column: 2/-2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-holder {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        @media screen and (max-width:800px){
+        grid-template-columns: 1fr;
+           
+    
+        } 
+        gap: 2rem;
+        max-width: 100rem;    
+        width: 100%;    
+        border-bottom: 1px solid rgba(0, 0, 0, 0.20) ;
+
+    }
+}
+.card-1 {
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    &-text {
+        font-size: 2rem;
+        min-height: 4rem;
+    }
+    .card__title {
+        padding: 2rem 0;
+    }
+    .flex-row-start {
+        padding-bottom: 3rem;
+    }
+    
+}
+
+.advertise {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2/-2;
+    &-holder {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.20) ;
+
+        width: 100%;
+        max-width: 100rem;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        align-items: flex-start;
+        padding-bottom: 3rem;
+        .card__title {
+            padding-top: 2rem;
+        }
+    }
+    &-text {
+        font-size: 3.4rem;
+    }
+}
+.final {
+    grid-column: 2/-2;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-holder {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        @media screen and (max-width:800px){
+            grid-template-columns: 1fr;
+               gap: 4rem;
+        
+            } 
+        width: 100%;
+        max-width: 100rem;
+        padding: 3rem 0;
+    }
+}
+.col {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+    &-text {
+        font-size: 2rem;
+        
+    }
+}
+.footer {
+    width: 100%;
+    background-color: rgba(33, 32, 32, .83);
+    padding: 3vh 5vw 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-holder {
+        max-width: 100rem;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);        
+        color: #fff;
+        font-size: 1.6rem;
+        @media screen and (max-width:500px){
+        font-size: 1.2rem;
+                  
+        }
+    }
+}
+.f-col {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    
+}
+.f-col:nth-child(2),.f-col:nth-child(3){
+    justify-self: center;
+}
+.logo-f {
+    padding-bottom: 15rem;
+    svg {
+        width: 10rem;
+    }
+    
+}
+.copyright {
+    padding-bottom: 3rem;
+}

@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Normal';
+    src:  url('../Fonts/GT-America-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Bold';
+    src:  url('../Fonts/GT-America-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'NormalS';
+    src:  url('../Fonts/HelveticaNeueMed.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'LightS';
+    src:  url('../Fonts/HelveticaNeueLt.ttf') format('truetype');
+}
+
+$font-primary: 'Normal';
+$font-primary-bold: 'Bold';
+$font-secondary: 'NormalS';
+$font-secondary-light: 'LightS';
+

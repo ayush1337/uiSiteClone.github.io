@@ -1,0 +1,221 @@
+@import url("http://fonts.cdnfonts.com/css/helvetica-neue-9");
+@font-face {
+  font-family: "Light";
+  src: url("../Fonts/JetBrainsMono-Thin.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Normal";
+  src: url("../Fonts/JetBrainsMono-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Bold";
+  src: url("../Fonts/JetBrainsMono-ExtraBold.woff2") format("woff2");
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  width: 100%;
+  scroll-behavior: smooth;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+body {
+  font-family: "Normal";
+  display: flex;
+  background: url(../img/dashed-line-grid-paper-with-white-pattern-background_77417-39.png);
+  background-repeat: repeat;
+  flex-direction: column;
+  justify-content: center;
+  background-size: 300px 300px;
+  background-color: #262626;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+  position: relative;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 350px;
+  margin: auto;
+  width: 100%;
+  gap: 5rem;
+  padding: 5rem;
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+    gap: 2rem;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  font-family: "Helvetica Neue", sans-serif;
+  color: #fff;
+  font-size: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow-y: hidden;
+  gap: 5rem;
+}
+
+header img {
+  width: 75rem;
+}
+@media screen and (max-width: 1200px) {
+  header img {
+    width: 45rem;
+  }
+}
+
+.text {
+  color: #EEEEEE;
+  max-width: 50rem;
+  text-align: justify;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 800px) {
+  .text {
+    padding: 2rem;
+  }
+}
+.text a {
+  color: #FFC400;
+  border-bottom: 2px solid #FFC400;
+}
+.text a:hover {
+  color: #FFE57F;
+  border-bottom: 2px solid #FFE57F;
+}
+
+.logo {
+  width: 100rem;
+}
+
+.card {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  border-radius: 10px;
+}
+.card__link {
+  color: #fff;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 2.5rem;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+.card__link:hover {
+  transform: translateY(-10px);
+}
+
+footer {
+  background-color: #FFC400;
+  font-family: "Bold";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  padding: 1rem;
+}
+@media screen and (max-width: 800px) {
+  footer {
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 1.5rem;
+  }
+}
+
+.row-1 a {
+  color: #F57C00;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.row-1 a:hover {
+  color: #FFA726;
+}
+
+.card-1 {
+  background: linear-gradient(0deg, rgb(38, 38, 38) 0%, rgba(38, 38, 38, 0.7122199221) 0%, rgba(38, 38, 38, 0) 100%), url(../img/PB.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card-2 {
+  background: linear-gradient(0deg, rgb(38, 38, 38) 0%, rgba(38, 38, 38, 0.7122199221) 0%, rgba(38, 38, 38, 0) 100%), url(../img/SM.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card-3 {
+  background: linear-gradient(0deg, rgb(38, 38, 38) 0%, rgba(38, 38, 38, 0.7122199221) 0%, rgba(38, 38, 38, 0) 100%), url(../img/zoo.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card-4 {
+  background: linear-gradient(0deg, rgb(38, 38, 38) 0%, rgba(38, 38, 38, 0.7122199221) 0%, rgba(38, 38, 38, 0) 100%), url(../img/tolv.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card-5 {
+  background: linear-gradient(0deg, rgb(38, 38, 38) 0%, rgba(38, 38, 38, 0.7122199221) 0%, rgba(38, 38, 38, 0) 100%), url(../img/pubg.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card-6 {
+  background: linear-gradient(0deg, rgb(38, 38, 38) 0%, rgba(38, 38, 38, 0.7122199221) 0%, rgba(38, 38, 38, 0) 100%), url(../img/10x19.png);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*# sourceMappingURL=style.css.map */

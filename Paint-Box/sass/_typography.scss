@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'Light';
+    src:  url('../Fonts/Light.woff2') format('woff2'),
+          url('../Fonts/Light.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Light-Italic';
+    src:  url('../Fonts/Light-Italic.woff2') format('woff2'),
+          url('../Fonts/Light-Italic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Normal';
+    src:  url('../Fonts/Normal.woff2') format('woff2'),
+          url('../Fonts/Normal.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Normal-Italic';
+    src:  url('../Fonts/Normal-Italic.woff2') format('woff2'),
+          url('../Fonts/Normal-Italic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Bold';
+    src:  url('../Fonts/Bold.woff2') format('woff2'),
+          url('../Fonts/Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Proxima-Nova';
+    src:  url('../Fonts/Promixa-Nova.woff2') format('woff2');
+}
+
+$font-primary: 'Normal';
+$font-primary-italic: 'Normal-Italic';
+$font-primary-light: 'Light';
+$font-primary-light-italic: 'Light-Italic';
+$font-primary-bold: 'Bold';
+$font-secondary:  'Proxima-Nova';
+
+$color-white : "#fff";
+
+.heading__2 {
+    font-family: $font-primary-light;
+    font-weight: 200;
+    color: #fff;
+    font-size: 5rem;
+    @media only screen and (max-width: 1000px) {
+        font-size: 2.5rem;     
+    }
+}
+
+.italic {
+    font-family: $font-primary-light-italic;
+}

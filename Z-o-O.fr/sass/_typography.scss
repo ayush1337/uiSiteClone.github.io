@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Light';
+    src:  url('../Fonts/HelveticaNeueLt.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Normal';
+    src:  url('../Fonts/HelveticaNeueMed.ttf') format('truetype');
+}
+
+$font-primary: 'Normal';
+$font-primary-light: 'Light';
+
